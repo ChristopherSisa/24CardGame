@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cardgame24.GameFXMLController">
+   <children>
+      <Button layoutX="33.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleFindSolution" prefHeight="0.0" prefWidth="131.0" text="Find a Solution">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="504.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="34.0" prefWidth="131.0" text="Refresh">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="500.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleVerify" prefHeight="34.0" prefWidth="131.0" text="Verify" />
+      <TextField fx:id="solutionTF" layoutX="172.0" layoutY="36.0" prefHeight="34.0" prefWidth="324.0" />
+      <TextField fx:id="expressionTF" layoutX="206.0" layoutY="388.0" prefHeight="34.0" prefWidth="270.0" />
+      <Label layoutX="33.0" layoutY="388.0" prefHeight="34.0" prefWidth="139.0" text="Enter an expression">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <BorderPane layoutX="41.0" layoutY="113.0" prefHeight="215.0" prefWidth="131.0" style="-fx-background-color: white;" />
+      <BorderPane layoutX="195.0" layoutY="113.0" prefHeight="215.0" prefWidth="131.0" style="-fx-background-color: white;" />
+      <BorderPane layoutX="345.0" layoutY="113.0" prefHeight="215.0" prefWidth="131.0" style="-fx-background-color: white;" />
+      <BorderPane layoutX="504.0" layoutY="113.0" prefHeight="215.0" prefWidth="131.0" style="-fx-background-color: white;" />
+      <ImageView fx:id="card1" fitHeight="215.0" fitWidth="139.0" layoutX="33.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card2" fitHeight="215.0" fitWidth="139.0" layoutX="195.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card3" fitHeight="215.0" fitWidth="139.0" layoutX="341.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="card4" fitHeight="215.0" fitWidth="139.0" layoutX="496.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
